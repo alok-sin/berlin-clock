@@ -10,16 +10,19 @@ namespace BerlinClockApp
         private String redColor = "R";
         private String offLampColor = "O";
         private String[] customizableProperties = new String[] { "Yellow Color", "Red Color", "Off Color" };
+        
         public BerlinClock(BerlinFormat time)
         {
             timeFormat = time;
         }
+
         public BerlinClock(DateTime time)
         {
             BerlinFormat berlinFormat = new BerlinFormat();
             berlinFormat.SetStandardTime(time);
             timeFormat = berlinFormat;
         }
+
         public BerlinClock(BerlinFormat time, String topLampColor, String hourLampColor, String offLampColor)
         {
             timeFormat = time;
