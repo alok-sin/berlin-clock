@@ -12,3 +12,6 @@
     ```Clock -> BerlinClock```
  
  4. `TimeConverterConcreteWithClock` is used to take a `ITimeFormat` object as input and shows a `Clock` object as output.
+
+ 5. `BerlinClockAppTest.cs` is the `main()` class to run this application.
+ 
