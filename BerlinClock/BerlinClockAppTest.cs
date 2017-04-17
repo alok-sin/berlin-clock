@@ -52,15 +52,20 @@ namespace BerlinClockApp
                 EndApplication("Incorrect time format.");
             }
             // Console.WriteLine(timeConverter.GetOutputFormat());
-            Console.WriteLine("Set Some customizations for your Clock:");
-            String[] customizations = timeConverter.GetClockCustomizations();
-            if (customizations.Length > 1)
+            Console.WriteLine("Set Some customizations for your Clock? Press n to skip");
+            String shouldCustomize = Console.ReadLine();
+            if (!(shouldCustomize.Equals("n")))
             {
-                foreach (string property in customizations)
+
+                String[] customizations = timeConverter.GetClockCustomizations();
+                if (customizations.Length > 1)
                 {
-                    Console.WriteLine(property);
-                    String newValue = Console.ReadLine();
-                    timeConverter.SetClockCustomization(property, newValue);
+                    foreach (string property in customizations)
+                    {
+                        Console.WriteLine(property);
+                        String newValue = Console.ReadLine();
+                        timeConverter.SetClockCustomization(property, newValue);
+                    }
                 }
             }
             Console.WriteLine(timeConverter.ShowClockTime());
