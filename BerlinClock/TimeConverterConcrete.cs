@@ -13,14 +13,10 @@ namespace BerlinClockApp
             this.inputFormat = this.GetTimeFormatFromString(inputFormat);
             this.outputFormat = this.GetTimeFormatFromString(outputFormat);
         }
+
         public override string GetOutputFormat()
         {
             return outputFormat.GetTime();
-        }
-
-        public ITimeFormat GetOutputFormatForClock()
-        {
-            return outputFormat;
         }
 
         public override void SetInputTime(string time)

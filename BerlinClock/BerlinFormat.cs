@@ -53,6 +53,11 @@ namespace BerlinClockApp
             }
         }
 
+        public String GetTimeFormatRepresentation()
+        {
+            return "100001111000000000001111";
+        }
+
         private String GetHourString(int hours)
         {
             return GetLampStateBitString((hours / 5), 4) + GetLampStateBitString((hours % 5), 4);
@@ -93,7 +98,7 @@ namespace BerlinClockApp
         private int GetTimeUnitsFromString(String timeString)
         {
             int total = 0;
-            // prevBit and currBit ensure that the berlin format string has no 1s after 0s
+            // prevBit and currBit ensure that the berlin format string slice has no 1s after 0s
             int prevBit = 1;
             int currBit = 0;
 
@@ -109,11 +114,6 @@ namespace BerlinClockApp
                 prevBit = currBit;
             }
             return total;
-        }
-
-        public String GetTimeFormatRepresentation()
-        {
-            return "100001111000000000001111";
         }
     }
 }

@@ -12,6 +12,7 @@ namespace BerlinClockApp
             base.SetInputTime(time);
             this.clock = this.getClockFromOutputFormat();
         }
+
         public String ShowClockTime()
         {
             return clock.ShowTime();

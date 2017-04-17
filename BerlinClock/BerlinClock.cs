@@ -75,8 +75,9 @@ namespace BerlinClockApp
          */
         public override void SetCustomizableProperty(String property, String newValue)
         {
+            // @ToDo: change customizableProperties to a map and do this in one line:
             // this.GetType().GetProperty(customizableProperties[property]).SetValue(newValue);
-            switch(property)
+            switch (property)
             {
                 case "Yellow Color": yellowColor = newValue; break;
                 case "Red Color": redColor = newValue; break;
