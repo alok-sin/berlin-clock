@@ -8,6 +8,8 @@ namespace BerlinClockApp
 {
     class TimeConverterConcrete : TimeConverter
     {
+        public const String extendedTimeFormatRepresentation = "extended";
+        public const String berlinTimeFormatRepresentation = "berlin";
         public TimeConverterConcrete(String inputFormat, String outputFormat)
         {
             this.inputFormat = this.GetTimeFormatFromString(inputFormat);
@@ -34,8 +36,8 @@ namespace BerlinClockApp
         {
             switch(timeFormat)
             {
-                case "extended": return new ExtendedFormat();
-                case "berlin": return new BerlinFormat();
+                case extendedTimeFormatRepresentation: return new ExtendedFormat();
+                case berlinTimeFormatRepresentation: return new BerlinFormat();
                 default: return new ExtendedFormat();
             }
         }

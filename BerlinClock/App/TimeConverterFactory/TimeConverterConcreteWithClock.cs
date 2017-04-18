@@ -5,6 +5,8 @@ namespace BerlinClockApp
     class TimeConverterConcreteWithClock : TimeConverterConcrete
     {
         private Clock clock;
+        public const String berlinFormatClassName = "BerlinFormat";
+
         public TimeConverterConcreteWithClock(string inputFormat, string outputFormat) : base(inputFormat, outputFormat) { }
 
         public override void SetInputTime(string time)
@@ -20,7 +22,7 @@ namespace BerlinClockApp
 
         private Clock getClockFromOutputFormat()
         {
-            if (this.outputFormat.GetType().Name == "BerlinFormat")
+            if (this.outputFormat.GetType().Name == berlinFormatClassName)
             {
                 return new BerlinClock(outputFormat.GetStandardTime());
             }

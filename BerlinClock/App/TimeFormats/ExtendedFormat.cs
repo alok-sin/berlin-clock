@@ -7,6 +7,7 @@ namespace BerlinClockApp
     class ExtendedFormat : ITimeFormat
     {
         private DateTime standardTime;
+        private const String timeFormat = "hh:mm:ss";
 
         public DateTime GetStandardTime()
         {
@@ -35,7 +36,7 @@ namespace BerlinClockApp
 
         public String GetTimeFormatRepresentation()
         {
-            return "hh:mm:ss";
+            return timeFormat;
         }
     }
 }

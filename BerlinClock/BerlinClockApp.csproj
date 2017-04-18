@@ -6,8 +6,8 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{72B7F0F8-D1E0-4F45-8CE7-7D8985A13AFB}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>BerlinClock</RootNamespace>
-    <AssemblyName>BerlinClock</AssemblyName>
+    <RootNamespace>BerlinClockApp</RootNamespace>
+    <AssemblyName>BerlinClockApp</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -41,19 +41,22 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BerlinClock.cs" />
+    <Compile Include="Classes\Clocks\BerlinClock.cs" />
     <Compile Include="BerlinClockAppTest.cs" />
-    <Compile Include="BerlinFormat.cs" />
-    <Compile Include="Clock.cs" />
-    <Compile Include="ExtendedFormat.cs" />
-    <Compile Include="ITimeFormat.cs" />
+    <Compile Include="Classes\TimeFormats\BerlinFormat.cs" />
+    <Compile Include="Classes\Clocks\Clock.cs" />
+    <Compile Include="Classes\Exceptions\ClockException.cs" />
+    <Compile Include="Classes\TimeFormats\ExtendedFormat.cs" />
+    <Compile Include="Classes\TimeFormats\ITimeFormat.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="TimeConverter.cs" />
-    <Compile Include="TimeConverterConcrete.cs" />
-    <Compile Include="TimeConverterConcreteWithClock.cs" />
+    <Compile Include="Classes\TimeConverterFactory\TimeConverter.cs" />
+    <Compile Include="Classes\TimeConverterFactory\TimeConverterConcrete.cs" />
+    <Compile Include="Classes\TimeConverterFactory\TimeConverterConcreteWithClock.cs" />
+    <Compile Include="Classes\Exceptions\TimeFormatException.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
