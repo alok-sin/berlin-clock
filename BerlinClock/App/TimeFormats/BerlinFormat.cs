@@ -89,7 +89,7 @@ namespace BerlinClockApp
 
         private String GetSecondsString(int seconds)
         {
-            return GetLampStateBitString((seconds+1 % 2), numLampFirstRow);
+            return GetLampStateBitString(((seconds + 1) % 2), numLampFirstRow);
         }
 
         /*
