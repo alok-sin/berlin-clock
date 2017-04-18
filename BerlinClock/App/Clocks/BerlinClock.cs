@@ -20,6 +20,7 @@ namespace BerlinClockApp
         private const int fiveTimeUnits = 5;
         private const int onState = 1;
         private const int offState = 0;
+        private const String invalidPropertyReferenceError = "Invalid property referenced.";
 
         public BerlinClock(BerlinFormat time)
         {
@@ -98,7 +99,7 @@ namespace BerlinClockApp
                 case "Yellow Color": yellowColor = newValue; break;
                 case "Red Color": redColor = newValue; break;
                 case "Off Color": offLampColor = newValue; break;
-                default: throw new ClockException("Invalid property referenced.");
+                default: throw new ClockException(invalidPropertyReferenceError);
             }
         }
 

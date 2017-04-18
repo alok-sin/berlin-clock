@@ -18,6 +18,7 @@ namespace BerlinClockApp
         private const int onState = 1;
         private const int offState = 0;
         private const String timeFormat = "24 character bit string: e.g.: 100001111000000000001111";
+        private const String invalidInputError = "Invalid input String to Berlin Format";
 
         public DateTime GetStandardTime()
         {
@@ -67,7 +68,7 @@ namespace BerlinClockApp
             }
             else
             {
-                throw new TimeFormatException("Invalid input String to Berlin Format");
+                throw new TimeFormatException(invalidInputError);
             }
         }
 
@@ -138,8 +139,9 @@ namespace BerlinClockApp
                 currBit = (int)Char.GetNumericValue(c);
                 if (prevBit == offState && currBit == onState)
                 {
+                    // ToDo: Remove this check. Useful for debugging for now.
                     Console.WriteLine("Exception at berlin input: " + timeString);
-                    throw new TimeFormatException("Invalid Berlin time format");
+                    throw new TimeFormatException(invalidInputError);
                 }
                 total += (int)Char.GetNumericValue(c);
                 prevBit = currBit;
