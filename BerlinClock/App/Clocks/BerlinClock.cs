@@ -41,7 +41,7 @@ namespace BerlinClockApp
             this.offLampColor = offLampColor;
         }
 
-        public override string ShowTime()
+        public override void ShowTime()
         {
             String berlinFormat = timeFormat.GetTime();
             // Generate an array of tuples where each tuple represents a consecutive set of lamps
@@ -78,7 +78,7 @@ namespace BerlinClockApp
                 currentOffset += timeSlice.Item3;
             }
 
-            return output;
+            Console.WriteLine(output);
         }
 
         public override String[] GetCustomizableProperties()

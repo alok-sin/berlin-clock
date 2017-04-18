@@ -45,7 +45,7 @@ namespace BerlinClockApp
                         }
                     }
                 }
-                Console.WriteLine(timeConverter.ShowClockTime());
+                timeConverter.ShowClockTime();
             }
             catch (TimeFormatException e)
             {

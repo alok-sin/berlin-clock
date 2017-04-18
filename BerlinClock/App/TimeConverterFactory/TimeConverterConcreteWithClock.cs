@@ -12,15 +12,15 @@ namespace BerlinClockApp
         public override void SetInputTime(string time)
         {
             base.SetInputTime(time);
-            this.clock = this.getClockFromOutputFormat();
+            this.clock = this.GetClockFromOutputFormat();
         }
 
-        public String ShowClockTime()
+        public void ShowClockTime()
         {
-            return clock.ShowTime();
+            clock.ShowTime();
         }
 
-        private Clock getClockFromOutputFormat()
+        private Clock GetClockFromOutputFormat()
         {
             if (this.outputFormat.GetType().Name == berlinFormatClassName)
             {

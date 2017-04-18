@@ -41,18 +41,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Classes\Clocks\BerlinClock.cs" />
+    <Compile Include="App\Clocks\BerlinClock.cs" />
     <Compile Include="BerlinClockAppTest.cs" />
-    <Compile Include="Classes\TimeFormats\BerlinFormat.cs" />
-    <Compile Include="Classes\Clocks\Clock.cs" />
-    <Compile Include="Classes\Exceptions\ClockException.cs" />
-    <Compile Include="Classes\TimeFormats\ExtendedFormat.cs" />
-    <Compile Include="Classes\TimeFormats\ITimeFormat.cs" />
+    <Compile Include="App\TimeFormats\BerlinFormat.cs" />
+    <Compile Include="App\Clocks\Clock.cs" />
+    <Compile Include="App\Exceptions\ClockException.cs" />
+    <Compile Include="App\TimeFormats\ExtendedFormat.cs" />
+    <Compile Include="App\TimeFormats\ITimeFormat.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Classes\TimeConverterFactory\TimeConverter.cs" />
-    <Compile Include="Classes\TimeConverterFactory\TimeConverterConcrete.cs" />
-    <Compile Include="Classes\TimeConverterFactory\TimeConverterConcreteWithClock.cs" />
-    <Compile Include="Classes\Exceptions\TimeFormatException.cs" />
+    <Compile Include="App\TimeConverterFactory\TimeConverter.cs" />
+    <Compile Include="App\TimeConverterFactory\TimeConverterConcrete.cs" />
+    <Compile Include="App\TimeConverterFactory\TimeConverterConcreteWithClock.cs" />
+    <Compile Include="App\Exceptions\TimeFormatException.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
