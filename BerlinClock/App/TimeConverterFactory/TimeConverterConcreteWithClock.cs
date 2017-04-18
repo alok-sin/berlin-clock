@@ -2,7 +2,7 @@
 
 namespace BerlinClockApp
 {
-    class TimeConverterConcreteWithClock : TimeConverterConcrete
+    public class TimeConverterConcreteWithClock : TimeConverterConcrete
     {
         private Clock clock;
         public const String berlinFormatClassName = "BerlinFormat";
@@ -15,9 +15,9 @@ namespace BerlinClockApp
             this.clock = this.GetClockFromOutputFormat();
         }
 
-        public void ShowClockTime()
+        public String ShowClockTime()
         {
-            clock.ShowTime();
+            return clock.ShowTime();
         }
 
         private Clock GetClockFromOutputFormat()

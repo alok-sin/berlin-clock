@@ -1,6 +1,6 @@
 ﻿namespace BerlinClockApp
 {
-    abstract class TimeConverter
+    public abstract class TimeConverter
     {
         protected ITimeFormat inputFormat;
         protected ITimeFormat outputFormat;

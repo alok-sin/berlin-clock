@@ -2,7 +2,7 @@
 
 namespace BerlinClockApp
 {
-    interface ITimeFormat
+    public interface ITimeFormat
     {
         DateTime GetStandardTime();
 

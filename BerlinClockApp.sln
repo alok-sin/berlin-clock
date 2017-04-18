@@ -1,9 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.26403.3
+VisualStudioVersion = 15.0.26403.7
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BerlinClockApp", "BerlinClock\BerlinClockApp.csproj", "{72B7F0F8-D1E0-4F45-8CE7-7D8985A13AFB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestBerlinApp", "TestBerlinApp\TestBerlinApp.csproj", "{80507329-D3F7-468E-881B-4DE7E9805009}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{72B7F0F8-D1E0-4F45-8CE7-7D8985A13AFB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{72B7F0F8-D1E0-4F45-8CE7-7D8985A13AFB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{72B7F0F8-D1E0-4F45-8CE7-7D8985A13AFB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{80507329-D3F7-468E-881B-4DE7E9805009}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{80507329-D3F7-468E-881B-4DE7E9805009}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{80507329-D3F7-468E-881B-4DE7E9805009}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{80507329-D3F7-468E-881B-4DE7E9805009}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

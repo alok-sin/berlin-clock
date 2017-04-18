@@ -11,7 +11,7 @@ namespace BerlinClockApp
         public Clock() {
             // Code to initialize class goes here.
         }
-        abstract public void ShowTime();
+        abstract public String ShowTime();
         abstract public String[] GetCustomizableProperties();
         abstract public void SetCustomizableProperty(String property, String newValue);
     }

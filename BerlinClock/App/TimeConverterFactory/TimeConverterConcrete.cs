@@ -6,10 +6,11 @@ using System.Threading.Tasks;
 
 namespace BerlinClockApp
 {
-    class TimeConverterConcrete : TimeConverter
+    public class TimeConverterConcrete : TimeConverter
     {
         public const String extendedTimeFormatRepresentation = "extended";
         public const String berlinTimeFormatRepresentation = "berlin";
+
         public TimeConverterConcrete(String inputFormat, String outputFormat)
         {
             this.inputFormat = this.GetTimeFormatFromString(inputFormat);
