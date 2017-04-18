@@ -44,7 +44,7 @@ namespace TestBerlinApp
             Tuple<String, String>[] tuples =
                {
                 Tuple.Create("111000000111111111000000", "Y RROO OOOO YYRYYRYYROO OOOO"),
-                //Tuple.Create("111101000111111100001100", "Y RRRO ROOO YYRYYRYOOOO YYOO")
+                Tuple.Create("111101000111111100001100", "Y RRRO ROOO YYRYYRYOOOO YYOO")
             };
 
             foreach (Tuple<String, String> t in tuples)

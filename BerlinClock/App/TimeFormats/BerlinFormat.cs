@@ -62,7 +62,7 @@ namespace BerlinClockApp
                 standardTime = new DateTime(1, 1, 1, 
                                 (fiveHours * fiveTimeUnits + oneHours), 
                                 (elevenMinutes * fiveTimeUnits + oneMinutes), 
-                                seconds
+                                (seconds + 1)
                                );
                 // Console.WriteLine("berlin set time standard time " + standardTime);
             }

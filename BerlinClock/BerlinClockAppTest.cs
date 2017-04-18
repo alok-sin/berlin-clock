@@ -24,6 +24,7 @@ namespace BerlinClockApp
 
             Console.WriteLine("Enter time in "+ timeConverter.GetInputTimeString());
             String userInputTime = Console.ReadLine();
+            // userInputTime = "111000000111111111000000";
             try
             {
                 timeConverter.SetInputTime(userInputTime);
