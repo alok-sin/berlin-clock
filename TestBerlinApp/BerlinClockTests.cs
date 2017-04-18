@@ -37,5 +37,29 @@ namespace TestBerlinApp
                 Assert.AreEqual(t.Item2, actualTime, "Incorrect output");
             }
         }
+
+        [TestMethod]
+        public void TestBerlinToBerlinTwo()
+        {
+            Tuple<String, String>[] tuples =
+               {
+                Tuple.Create("111000000111111111000000", "Y RROO OOOO YYRYYRYYROO OOOO"),
+                //Tuple.Create("111101000111111100001100", "Y RRRO ROOO YYRYYRYOOOO YYOO")
+            };
+
+            foreach (Tuple<String, String> t in tuples)
+            {
+                // arrange  
+                var timeConverter = new TimeConverterConcreteWithClock("berlin", "berlin");
+
+                // act  
+                timeConverter.SetInputTime(t.Item1);
+                var actualTime = timeConverter.ShowClockTime();
+
+                // assert
+                Assert.AreEqual(t.Item2, actualTime, "Incorrect output");
+            }
+
+        }
     }
 }
